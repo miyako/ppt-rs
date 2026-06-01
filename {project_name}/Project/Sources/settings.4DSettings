@@ -3,6 +3,6 @@
 		<compiler>
 			<options syntax_file="true"/>
 		</compiler>
-		<general component_classStore_name="curl"/>
+		<general component_classStore_name="{project_name}"/>
 	</com.4d>
 </preferences>
