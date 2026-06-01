@@ -33,7 +33,7 @@ Function terminate()
 Function get controller : cs:C1710._pptcli_Controller
 	
 	return This:C1470._controller
-		
+	
 Function execute($option : Variant; $events : Object) : Collection
 	
 	var $onResponse; $onData; $onTerminate; $onError : 4D:C1709.Function
@@ -86,10 +86,6 @@ Function execute($option : Variant; $events : Object) : Collection
 		
 		$command:=This:C1470.escape(This:C1470.executablePath)
 		
-		If ($isAsync)
-			$command+=" -# "
-		End if 
-		
 		$stdOut:=True:C214
 		
 		var $data; $file : Variant
@@ -101,15 +97,8 @@ Function execute($option : Variant; $events : Object) : Collection
 			Case of 
 				: (Value type:C1509($value)=Is text:K8:3)
 					Case of 
-						: ($value="-#")
-							continue
-						: ($value="-o") || ($value="--output")
-							$stdOut:=False:C215
-							$command+=" "+$value
-							continue
-						: ($value="@-") || ($value="-")
-							$isStream:=True:C214
-							$command+=" "+$value
+						: (False:C215)
+							//no cli args to ignore
 							continue
 						Else 
 							$command+=" "+This:C1470.escape($value)
@@ -141,7 +130,7 @@ Function execute($option : Variant; $events : Object) : Collection
 					//
 			End case 
 		End for each 
-				
+		
 		var $worker : 4D:C1709.SystemWorker
 		$worker:=This:C1470.controller.execute($command; $isStream ? $file : Null:C1517; $data).worker
 		

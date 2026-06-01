@@ -5,3 +5,4 @@ var $text : Text
 $text:=$worker.response
 $file:=$params.context
 
+OPEN URL:C673($file.platformPath)
