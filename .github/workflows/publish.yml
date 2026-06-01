@@ -26,7 +26,7 @@ on:
           required: true
 
 env: 
-  project_path: {project_name}/Project/{project_name}.4DProject
+  project_path: pptcli/Project/pptcli.4DProject
   
 jobs:
 
