@@ -10,7 +10,7 @@ Class constructor($class : 4D:C1709.Class)
 	var $controller : 4D:C1709.Class
 	var $superclass : 4D:C1709.Class
 	$superclass:=$class.superclass
-	$controller:=cs:C1710._{project_name}_Controller
+	$controller:=cs:C1710._{cli_name}_Controller
 	
 	While ($superclass#Null:C1517)
 		If ($superclass.name=$controller.name)
@@ -30,7 +30,7 @@ Function terminate()
 	
 	This:C1470.controller.terminate()
 	
-Function get controller : cs:C1710._{project_name}_Controller
+Function get controller : cs:C1710._{cli_name}_Controller
 	
 	return This:C1470._controller
 		
