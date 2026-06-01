@@ -5,16 +5,16 @@ kramdown:
   syntax_highlighter: rouge
 highlighter: rouge
 plugins_dir: _plugins
-baseurl: /pptcli
+baseurl: /ppt-rs
 
-title: "pptcli"
-description: "Use pptcli from 4D"
+title: "ppt-rs"
+description: "Use ppt-rs from 4D"
 logo: "/assets/logo.png"   # optional
 show_downloads: true       # controls the download links in header
 github:
   is_user_page: true
   owner_url: "https://github.com/miyako"
-  repository_url: "https://github.com/miyako/pptcli"
+  repository_url: "https://github.com/miyako/ppt-rs"
   is_project_page: false
 
 exclude:
@@ -23,6 +23,6 @@ exclude:
   - "LICENSE"
   - "README.md"
   - "Gemfile"
-  - "pptcli/userPreferences.*"
-  - "pptcli/Libraries/*"
-  - "pptcli/Data/*"
+  - "ppt-rs/userPreferences.*"
+  - "ppt-rs/Libraries/*"
+  - "ppt-rs/Data/*"

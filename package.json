@@ -1,12 +1,12 @@
 {
-  "name": "pptcli",
-  "description": "pptcli",
+  "name": "ppt-rs",
+  "description": "ppt-rs",
   "author": [
     "Keisuke Miyako <keisuke.miyako@4D.com>"
   ],
   "license": "MIT",
-  "repository": "https://github.com/miyako/pptcli",
-  "version": "20.0.2",
+  "repository": "https://github.com/miyako/ppt-rs",
+  "version": "20.0.3",
   "tool": {
     "platform": "macos",
     "branch": "20.x",
