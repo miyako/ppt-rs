@@ -9,7 +9,7 @@ Class constructor($CLI : cs:C1710._CLI)
 	
 	This:C1470.clear()
 	
-Function clear() : cs:C1710._{cli_name}_Controller
+Function clear() : cs:C1710._pptcli_Controller
 	
 	This:C1470.stdOut:=""
 	This:C1470.stdErr:=""
@@ -22,7 +22,7 @@ Function onData($worker : 4D:C1709.SystemWorker; $params : Object)
 	
 Function onDataError($worker : 4D:C1709.SystemWorker; $params : Object)
 	
-	var $instance : cs:C1710.{cli_name}
+	var $instance : cs:C1710.pptcli
 	$instance:=This:C1470.instance
 	
 	If ($instance.onData#Null:C1517) && (OB Instance of:C1731($instance.onData; 4D:C1709.Function))
@@ -49,7 +49,7 @@ Function onDataError($worker : 4D:C1709.SystemWorker; $params : Object)
 	
 Function onResponse($worker : 4D:C1709.SystemWorker; $params : Object)
 	
-	var $instance : cs:C1710.{cli_name}
+	var $instance : cs:C1710.pptcli
 	$instance:=This:C1470.instance
 	
 	If (OB Instance of:C1731($instance.onResponse; 4D:C1709.Function))
@@ -58,7 +58,7 @@ Function onResponse($worker : 4D:C1709.SystemWorker; $params : Object)
 	
 Function onError($worker : 4D:C1709.SystemWorker; $params : Object)
 	
-	var $instance : cs:C1710.{cli_name}
+	var $instance : cs:C1710.pptcli
 	$instance:=This:C1470.instance
 	
 	If (OB Instance of:C1731($instance.onError; 4D:C1709.Function))
@@ -67,7 +67,7 @@ Function onError($worker : 4D:C1709.SystemWorker; $params : Object)
 	
 Function onTerminate($worker : 4D:C1709.SystemWorker; $params : Object)
 	
-	var $instance : cs:C1710.{cli_name}
+	var $instance : cs:C1710.pptcli
 	$instance:=This:C1470.instance
 	
 	If (OB Instance of:C1731($instance.onTerminate; 4D:C1709.Function))
