@@ -1,11 +1,11 @@
 {
-  "name": "ppt-rs",
-  "description": "ppt-rs",
+  "name": "{project_name}",
+  "description": "{project_name}",
   "author": [
     "Keisuke Miyako <keisuke.miyako@4D.com>"
   ],
   "license": "MIT",
-  "repository": "https://github.com/miyako/ppt-rs",
+  "repository": "https://github.com/miyako/{project_name}",
   "version": "20.0.0",
   "tool": {
     "platform": "macos",

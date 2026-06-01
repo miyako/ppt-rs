@@ -7,8 +7,8 @@ If ($params=Null:C1517)
 	
 Else 
 	
-	var $ppt-rs : cs:C1710.ppt-rs
-	$ppt-rs:=cs:C1710.ppt-rs.new(cs:C1710._ppt-rs_Controller)
+	var ${project_name} : cs:C1710.{project_name}
+	${project_name}:=cs:C1710.{project_name}.new(cs:C1710._{project_name}_Controller)
 	
 	$URL:="https://resources-download.4d.com/release/20.x/20.5/latest/mac/tool4d_arm64.tar.xz"
 	$out:=Folder:C1567(fk desktop folder:K87:19).file("tool4d_arm64.tar.xz")
@@ -28,6 +28,6 @@ context object can have 2 properties: .data, .file
 it can be 4D.File, 4D.Blob, Blob, or Text
 */
 	$tasks.push([$URL; "-o"; $out; "-L"; "-k"; {data: $out; file: Null:C1517}])
-	$results:=$ppt-rs.execute($tasks; $events)
+	$results:=${project_name}.execute($tasks; $events)
 	
 End if 
