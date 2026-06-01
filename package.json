@@ -2,6 +2,7 @@
   "name": "ppt-rs",
   "description": "ppt-rs",
   "author": [
+    "Ying Kit WONG (@yingkitw)",
     "Keisuke Miyako <keisuke.miyako@4D.com>"
   ],
   "license": "MIT",
