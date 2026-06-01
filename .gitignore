@@ -1,3 +1,5 @@
 pptcli/Project/DerivedData/*
 pptcli/userPreferences.*
 pptcli/Data/*
+ppt-rs/Project/DerivedData/*
+ppt-rs/userPreferences.*
